@@ -1,20 +1,28 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Aura Craft Labs Limited | Official Agency Website
 
-# Run and deploy your AI Studio app
+Welcome to the official repository for **Aura Craft Labs Limited**, a premier software development and technology solutions agency specializing in high-performance web applications, responsive user interfaces, and custom digital infrastructure.
 
-This contains everything you need to run your app locally.
+## 🚀 About Us
+At Aura Craft Labs Limited, we build modern, scalable, and responsive digital products. This repository contains the source code for our company portfolio and client-facing web application, showcasing our technical capabilities and past work.
 
-View your app in AI Studio: https://ai.studio/apps/816b94d1-7b0d-426b-9945-5a3a760dc811
+## 🛠️ Tech Stack
+* **Frontend:** React, HTML5, CSS3, JavaScript (ES6+), Tailwind CSS
+* **Backend & Logic:** Node.js, Express (supporting server architecture and client communications)
+* **Design & Architecture:** Modern responsive layouts, component-driven UI
 
-## Run Locally
+## ✨ Core Features
+* **Interactive Portfolio:** Showcasing live software projects and technical solutions.
+* **Responsive Design:** Optimized for seamless viewing across mobile devices, tablets, and desktop workstations.
+* **Direct Client Inquiry:** Integrated contact workflows allowing potential partners to connect directly with our engineering team.
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 📂 Project Structure
+```text
+aura-craft-labs/
+├── public/           # Static assets, images, and brand logos
+├── src/
+│   ├── components/   # Reusable UI components (Navbar, Footer, Portfolio Grid)
+│   ├── pages/        # Main application views and layouts
+│   ├── styles/       # Global CSS and Tailwind configurations
+│   └── App.js        # Main application routing and logic
+├── package.json      # Dependencies and project metadata
+└── README.md         # Project documentation
