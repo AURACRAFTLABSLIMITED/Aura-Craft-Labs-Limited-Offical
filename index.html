@@ -31,20 +31,19 @@
   <canvas id="ambient-canvas"></canvas>
 
   <!-- ==========================================================================
-       NAVIGATION BAR (Sticky, Fully Responsive, Official Logo)
+       NAVIGATION BAR (Clean 3-Section Rebuilt Layout: Brand | Navigation | CTA)
        ========================================================================== -->
-  <header class="navbar" id="navbar">
-    <div class="container nav-container">
-      <!-- Official Company Logo & Name (Single Row) -->
+  <header class="header" id="navbar">
+    <div class="navbar">
+      <!-- 1. LEFT SECTION: Logo & Official Brand Identity -->
       <a href="#home" class="brand" id="brand-link">
         <img src="/assets/logo.webp" alt="Aura Craft Labs Limited Official Logo" class="brand-logo-img" id="nav-logo" onerror="this.onerror=null; this.src='/assets/logo.png';" />
         <span class="brand-name">Aura Craft Labs Limited</span>
       </a>
 
-      <!-- Desktop Navigation Menu (All 12 Required Items) -->
-      <nav aria-label="Main Navigation">
+      <!-- 2. CENTER SECTION: Evenly Spaced Navigation Links -->
+      <nav class="nav-center" aria-label="Main Navigation">
         <ul class="nav-links">
-          <li><a href="#home" class="nav-link active">Home</a></li>
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#capabilities" class="nav-link">Capabilities</a></li>
           <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
@@ -55,13 +54,12 @@
           <li><a href="#pricing" class="nav-link">Pricing</a></li>
           <li><a href="#blog" class="nav-link">Blog</a></li>
           <li><a href="#changelog" class="nav-link">Changelog</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
 
-      <!-- Primary Call to Action & Mobile Hamburger -->
-      <div class="nav-actions">
-        <a href="#contact" class="btn btn-primary" id="nav-cta-btn">Let's Build Together</a>
+      <!-- 3. RIGHT SECTION: Primary CTA Button & Mobile Toggle -->
+      <div class="navbar-cta">
+        <a href="#contact" class="btn btn-primary nav-cta-btn" id="nav-cta-btn">Let's Build Together</a>
         <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
@@ -1146,7 +1144,7 @@
               </p>
 
               <div class="contact-details-list">
-                <!-- Editable company email Email Placeholder -->
+                <!-- Editable Email Placeholder -->
                 <div class="contact-detail-item">
                   <div class="contact-icon">✉</div>
                   <div>
@@ -1155,12 +1153,12 @@
                   </div>
                 </div>
 
-                <!-- Editable Ceo Email Placeholder -->
+                <!-- Editable Phone Placeholder -->
                 <div class="contact-detail-item">
                   <div class="contact-icon">✉</div>
                   <div>
                     <div class="contact-detail-label">Email Inquiries</div>
-                    <div class="contact-detail-val" id="contact-email1">officalceoaliimran@gmail.com</div>
+                    <div class="contact-detail-val" id="contact-email">officalceoaliimran@gmail.com</div>
                   </div>
                 </div>
 
@@ -1222,8 +1220,7 @@
                     <option value="AI Automation & Workflows">AI Automation & Workflows</option>
                     <option value="API & System Integration">API & System Integration</option>
                     <option value="General Strategic Consultation">General Strategic Consultation</option>
-                    <option value="Full Stack Web Apps">Full Stack Web Apps</option>
-                    <option value="Mobile apps">Mobile apps</option>
+                      <option value="Mobile Apps">Mobile Apps</option>
                   </select>
                 </div>
               </div>
@@ -1252,7 +1249,7 @@
         <!-- Brand Info -->
         <div class="footer-brand">
           <div style="display: flex; align-items: center; gap: 12px;">
-            <img src="/assets/logo.svg" alt="Aura Craft Labs Limited" class="brand-logo-img" onerror="this.onerror=null; this.src='/assets/logo.png';" />
+            <img src="/assets/logo.webp" alt="Aura Craft Labs Limited" class="brand-logo-img" onerror="this.onerror=null; this.src='/assets/logo.png';" />
             <span style="font-size: 1.15rem; font-weight: 700; color: #ffffff;">Aura Craft Labs Limited</span>
           </div>
           <p>

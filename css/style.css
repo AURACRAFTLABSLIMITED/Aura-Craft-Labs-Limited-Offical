@@ -231,7 +231,8 @@ body {
 /* ==========================================================================
    NAVIGATION BAR
    ========================================================================== */
-.navbar {
+.header,
+#navbar {
   position: sticky;
   top: 0;
   left: 0;
@@ -239,39 +240,51 @@ body {
   height: var(--nav-height);
   z-index: 1000;
   background-color: rgba(7, 9, 14, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
   border-bottom: 1px solid var(--border-color);
-  transition: var(--transition-smooth);
+  transition: background-color 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
-.navbar.scrolled {
-  background-color: rgba(7, 9, 14, 0.95);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-  border-bottom-color: rgba(99, 102, 241, 0.2);
+.header.scrolled,
+#navbar.scrolled {
+  background-color: rgba(7, 9, 14, 0.96);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.65);
+  border-bottom-color: rgba(99, 102, 241, 0.22);
 }
 
-.nav-container {
+/* Rebuilt Balanced 3-Section Navbar: [Brand] [Nav Links] [CTA Button] */
+.navbar {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  gap: 36px; /* Guaranteed minimum separation between Brand, Nav, and CTA */
+  box-sizing: border-box;
 }
 
-/* Brand Identity */
+/* 1. LEFT SECTION: Brand Identity */
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px; /* Comfortable gap between logo and brand name */
   text-decoration: none;
-  color: var(--text-color);
-  white-space: nowrap;
-  flex-shrink: 0;
+  flex-shrink: 0; /* Never shrink or overlap */
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.brand:hover {
+  opacity: 0.92;
 }
 
 .brand-logo-img {
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   border-radius: 8px;
   object-fit: contain;
   background: #000000;
@@ -282,60 +295,112 @@ body {
 }
 
 .brand-name {
-  font-size: 1.15rem;
+  font-size: 1.12rem;
   font-weight: 700;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
   color: #ffffff;
   white-space: nowrap;
+  line-height: 1;
   display: inline-block;
 }
 
-/* Desktop Navigation Menu */
+/* 2. CENTER SECTION: Evenly Spaced Navigation Links */
+.nav-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1; /* Occupies middle space evenly */
+  min-width: 0;
+}
+
 .nav-links {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 15px;
+  justify-content: center;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 22px; /* Consistent flexbox gap between every single item */
   flex-wrap: nowrap;
   white-space: nowrap;
+}
+
+.nav-links li {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-link {
   color: var(--muted-text);
   text-decoration: none;
-  font-size: 0.84rem;
+  font-size: 0.86rem;
   font-weight: 500;
-  transition: var(--transition-smooth);
+  letter-spacing: -0.01em;
   padding: 6px 4px;
   position: relative;
   white-space: nowrap !important;
   display: inline-block;
+  line-height: 1;
+  transition: color 0.2s ease;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
   color: #ffffff;
 }
 
 .nav-link::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -4px;
   left: 0;
   width: 0%;
   height: 2px;
   background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
   transition: width 0.25s ease;
+  border-radius: 2px;
 }
 
-.nav-link:hover::after, .nav-link.active::after {
+.nav-link:hover::after,
+.nav-link.active::after {
   width: 100%;
 }
 
-.nav-actions {
-  display: flex;
+/* 3. RIGHT SECTION: CTA Button & Mobile Toggle */
+.navbar-cta {
+  display: inline-flex;
   align-items: center;
   gap: 16px;
+  flex-shrink: 0; /* Never shrink or overlap */
+}
+
+.nav-cta-btn,
+#nav-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 22px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  line-height: 1.2;
+}
+
+.nav-cta-btn:hover,
+#nav-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 28px rgba(99, 102, 241, 0.55);
 }
 
 /* Mobile Hamburger Button */
@@ -1843,12 +1908,45 @@ textarea.form-control {
 /* ==========================================================================
    RESPONSIVE DESIGN (MEDIA QUERIES)
    ========================================================================== */
-@media (max-width: 1260px) {
+@media (max-width: 1440px) {
+  .navbar {
+    padding-left: 32px;
+    padding-right: 32px;
+    gap: 24px;
+  }
+  .nav-links {
+    gap: 16px;
+  }
+  .nav-link {
+    font-size: 0.83rem;
+    padding: 6px 2px;
+  }
+  .brand-name {
+    font-size: 1.05rem;
+  }
+  .brand-logo-img {
+    width: 36px;
+    height: 36px;
+  }
+  .nav-cta-btn,
+  #nav-cta-btn {
+    padding: 8px 18px;
+    font-size: 0.84rem;
+  }
+}
+
+@media (max-width: 1240px) {
+  .nav-center,
   .nav-links {
     display: none;
   }
   .hamburger {
     display: block;
+  }
+  .navbar {
+    padding-left: 24px;
+    padding-right: 24px;
+    gap: 20px;
   }
 }
 
@@ -1890,5 +1988,24 @@ textarea.form-control {
   }
   .about-highlights {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding-left: 18px;
+    padding-right: 18px;
+    gap: 16px;
+  }
+  .brand-name {
+    font-size: 0.95rem;
+  }
+  .brand-logo-img {
+    width: 32px;
+    height: 32px;
+  }
+  .nav-cta-btn,
+  #nav-cta-btn {
+    display: none;
   }
 }
