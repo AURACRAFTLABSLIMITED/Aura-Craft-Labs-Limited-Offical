@@ -1,0 +1,6 @@
+{
+  "name": "Aura Craft Labs Limited",
+  "description": "Official corporate website for Aura Craft Labs Limited, an engineering and technology company founded by Ali Imran specializing in intelligent digital solutions, AI-powered applications, scalable software, and system automation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

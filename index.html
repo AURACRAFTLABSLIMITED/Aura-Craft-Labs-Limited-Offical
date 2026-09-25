@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura Craft Labs Limited — Intelligent Digital Solutions & AI Engineering</title>
+  
+  <!-- Meta Descriptions & Search Optimization -->
+  <meta name="description" content="Official corporate website for Aura Craft Labs Limited, an engineering and technology company founded by Ali Imran specializing in intelligent digital solutions, AI-powered applications, scalable software, and system automation." />
+  <meta property="og:title" content="Aura Craft Labs Limited — Intelligent Digital Solutions & AI Engineering" />
+  <meta property="og:description" content="Official corporate website for Aura Craft Labs Limited, an engineering and technology company founded by Ali Imran specializing in intelligent digital solutions, AI-powered applications, scalable software, and system automation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />
+  <link rel="alternate icon" type="image/png" href="/assets/logo.png" />
+
+  <!-- External Clean Font: Inter / Outfit modern sans fallback -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Core Pure CSS Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- Background Ambient Cyber Particles Canvas -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR (Sticky, Fully Responsive, Official Logo)
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <!-- Official Company Logo & Name (Single Row) -->
+      <a href="#home" class="brand" id="brand-link">
+        <img src="/assets/logo.webp" alt="Aura Craft Labs Limited Official Logo" class="brand-logo-img" id="nav-logo" onerror="this.onerror=null; this.src='/assets/logo.png';" />
+        <span class="brand-name">Aura Craft Labs Limited</span>
+      </a>
+
+      <!-- Desktop Navigation Menu (All 12 Required Items) -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#capabilities" class="nav-link">Capabilities</a></li>
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#use-cases" class="nav-link">Use Cases</a></li>
+          <li><a href="#solutions" class="nav-link">Solutions</a></li>
+          <li><a href="#integrations" class="nav-link">Integrations</a></li>
+          <li><a href="#developers" class="nav-link">Developers</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
+          <li><a href="#changelog" class="nav-link">Changelog</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Primary Call to Action & Mobile Hamburger -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary" id="nav-cta-btn">Let's Build Together</a>
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#capabilities" class="nav-link">Capabilities</a>
+    <a href="#how-it-works" class="nav-link">How It Works</a>
+    <a href="#use-cases" class="nav-link">Use Cases</a>
+    <a href="#solutions" class="nav-link">Solutions</a>
+    <a href="#integrations" class="nav-link">Integrations</a>
+    <a href="#developers" class="nav-link">Developers</a>
+    <a href="#pricing" class="nav-link">Pricing</a>
+    <a href="#blog" class="nav-link">Blog</a>
+    <a href="#changelog" class="nav-link">Changelog</a>
+    <a href="#contact" class="nav-link">Contact</a>
+    <a href="#contact" class="btn btn-primary" style="margin-top: 20px;">Start a Project</a>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero" id="home">
+      <div class="hero-glow-orb"></div>
+      <div class="container hero-content">
+        <!-- Badge Above Heading -->
+        <div class="hero-badge">
+          <span class="hero-badge-tag">Innovation</span>
+          <span class="hero-badge-text">AI • Software Engineering • Digital Platforms</span>
+        </div>
+
+        <!-- Main Headline -->
+        <h1 class="hero-title">
+          Building <span class="gradient-text">Intelligent Digital Solutions</span> for the Future
+        </h1>
+
+        <!-- Supporting Subtitle -->
+        <p class="hero-subtitle">
+          Aura Craft Labs Limited crafts next-generation digital products, AI-powered solutions, bespoke web applications, automation pipelines, and scalable enterprise technology designed for lasting business impact.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-cta-group">
+          <a href="#solutions" class="btn btn-primary" id="hero-btn-explore">Explore Our Solutions</a>
+          <a href="#contact" class="btn btn-secondary" id="hero-btn-start">Start a Project</a>
+        </div>
+
+        <!-- Hero Futuristic Tech Panel -->
+        <div class="hero-preview" id="hero-tech-preview">
+          <div class="hero-preview-bar">
+            <div class="preview-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="preview-address">https://api.auracraftlabs.com/v1/system/status</div>
+            <div style="font-size: 0.75rem; color: #34d399; font-weight: 600;">System Online ●</div>
+          </div>
+          <div class="hero-metrics-grid">
+            <div class="metric-pill">
+              <div class="metric-label">Engineering Focus</div>
+              <div class="metric-val gradient-text">Modern AI & SaaS</div>
+            </div>
+            <div class="metric-pill">
+              <div class="metric-label">Architecture</div>
+              <div class="metric-val">Cloud & Microservices</div>
+            </div>
+            <div class="metric-pill">
+              <div class="metric-label">Deployment</div>
+              <div class="metric-val" style="color: var(--secondary-color);">Continuous Delivery</div>
+            </div>
+            <div class="metric-pill">
+              <div class="metric-label">Standards</div>
+              <div class="metric-val">Enterprise Grade</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT SECTION / COMPANY INTRODUCTION
+         ========================================================================== -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            Company Introduction
+          </div>
+          <h2 class="section-title">Engineering Digital Excellence with Integrity</h2>
+          <p class="section-desc">
+            A technology partner committed to architectural clarity, sustainable software design, and client-focused digital innovation.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Executive Leadership Showcase: Ali Imran -->
+          <div class="ceo-card" id="executive-ceo-card">
+            <div class="ceo-img-container">
+              <img 
+                src="/assets/ali-imran-ceo.webp" 
+                alt="Ali Imran - CEO and Founder of Aura Craft Labs Limited" 
+                class="ceo-portrait-img" 
+                id="ceo-portrait-img" 
+                referrerpolicy="no-referrer"
+              />
+              <div class="ceo-badge-floating">
+                <span class="ceo-badge-dot"></span>
+                Leadership
+              </div>
+              <div class="ceo-info-overlay">
+                <div class="ceo-name-lg">ALI IMRAN</div>
+                <div class="ceo-title-sub">CEO | FOUNDER OF AURA CRAFT LABS LIMITED</div>
+              </div>
+            </div>
+            <div class="ceo-card-body">
+              <p class="ceo-quote">
+                "We engineer intelligent digital solutions founded on architectural discipline, sustainable software design, and verifiable operational impact."
+              </p>
+              <div class="ceo-contact-row">
+                <a href="mailto:officalceoaliimran@gmail.com" class="ceo-contact-pill" title="Email Ali Imran">
+                  <span style="color: var(--secondary-color);">✉</span> officalceoaliimran@gmail.com
+                </a>
+                <a href="#contact" class="ceo-contact-pill" title="Start a Project">
+                  <span>⚡</span> Direct Inquiries
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Company Mission & Core Principles Column -->
+          <div class="about-content-col">
+            <div class="about-intro-block">
+              <div class="leader-badge" style="margin-bottom: 16px;">
+                <span class="leader-badge-icon">⚡</span>
+                <div>
+                  <div class="leader-name">Aura Craft Labs Limited</div>
+                  <div class="leader-role">Intelligent Digital Engineering Laboratory</div>
+                </div>
+              </div>
+              <p class="about-text">
+                <strong>Aura Craft Labs Limited</strong> is an independent technology and software engineering enterprise founded and directed by <strong>Ali Imran</strong>, serving as <strong>CEO | Founder</strong>.
+              </p>
+              <p class="about-text">
+                Under Ali Imran's leadership, our team architects next-generation web applications, AI-driven automation pipelines, and custom software systems designed to scale seamlessly for modern businesses worldwide.
+              </p>
+              <p class="about-text" style="margin-bottom: 0;">
+                We bridge high-level strategy with production-ready execution, ensuring every client platform operates with enterprise reliability, robust security, and peak performance.
+              </p>
+            </div>
+
+            <div class="about-info-card">
+              <h3 style="font-size: 1.25rem; margin-bottom: 10px; color: #ffffff;">Our Core Principles</h3>
+              <p style="font-size: 0.9rem; color: var(--muted-text); margin-bottom: 20px;">
+                Every blueprint, pipeline, and digital experience reflects our commitment to long-term reliability.
+              </p>
+
+              <div class="about-highlights">
+                <div class="highlight-box">
+                  <h4>Intelligent Automation</h4>
+                  <p>Translating repetitive workflows into self-optimizing pipelines.</p>
+                </div>
+                <div class="highlight-box">
+                  <h4>Scalable Architecture</h4>
+                  <p>Systems built to effortlessly expand with your user base.</p>
+                </div>
+                <div class="highlight-box">
+                  <h4>Modular Codebases</h4>
+                  <p>Clean, maintainable software designed for developer productivity.</p>
+                </div>
+                <div class="highlight-box">
+                  <h4>Transparent Delivery</h4>
+                  <p>Clear milestones, communicative sprints, and verified outcomes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CAPABILITIES SECTION (8 Core Services)
+         ========================================================================== -->
+    <section class="section" id="capabilities">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            Technical Capabilities
+          </div>
+          <h2 class="section-title">Comprehensive Engineering Capabilities</h2>
+          <p class="section-desc">
+            From initial research and system design to production-grade deployment, we deliver comprehensive digital engineering across key modern disciplines.
+          </p>
+        </div>
+
+        <div class="capabilities-grid">
+          <!-- 1. AI Solutions -->
+          <div class="capability-card" id="cap-ai-solutions">
+            <div class="capability-icon">✦</div>
+            <h3 class="capability-title">AI Solutions</h3>
+            <p class="capability-desc">
+              Custom generative models, semantic search, intelligent recommendation engines, and bespoke predictive machine learning services tailored to your operations.
+            </p>
+            <span class="capability-tag">Intelligence</span>
+          </div>
+
+          <!-- 2. Web Development -->
+          <div class="capability-card" id="cap-web-dev">
+            <div class="capability-icon">⚡</div>
+            <h3 class="capability-title">Web Development</h3>
+            <p class="capability-desc">
+              High-speed, responsive, and accessible web experiences crafted with modern standards, precision typography, and intuitive user workflows.
+            </p>
+            <span class="capability-tag">Frontend & Backend</span>
+          </div>
+
+          <!-- 3. SaaS Products -->
+          <div class="capability-card" id="cap-saas-products">
+            <div class="capability-icon">⬡</div>
+            <h3 class="capability-title">SaaS Products</h3>
+            <p class="capability-desc">
+              End-to-end multi-tenant SaaS architecture, subscription infrastructure, role-based access security, and scalable cloud microservices.
+            </p>
+            <span class="capability-tag">Cloud Platforms</span>
+          </div>
+
+          <!-- 4. AI Automation -->
+          <div class="capability-card" id="cap-ai-automation">
+            <div class="capability-icon">⚙</div>
+            <h3 class="capability-title">AI Automation</h3>
+            <p class="capability-desc">
+              Automated ingestion pipelines, dynamic document understanding, autonomous assistant workflows, and seamless webhook event bridges.
+            </p>
+            <span class="capability-tag">Operations</span>
+          </div>
+
+          <!-- 5. Custom Software -->
+          <div class="capability-card" id="cap-custom-software">
+            <div class="capability-icon">❖</div>
+            <h3 class="capability-title">Custom Software</h3>
+            <p class="capability-desc">
+              Purpose-built software engineered to match specific proprietary business logic, specialized algorithms, and operational requirements.
+            </p>
+            <span class="capability-tag">Tailored Logic</span>
+          </div>
+
+          <!-- 6. Digital Platforms -->
+          <div class="capability-card" id="cap-digital-platforms">
+            <div class="capability-icon">◈</div>
+            <h3 class="capability-title">Digital Platforms</h3>
+            <p class="capability-desc">
+              Extensible enterprise portals, interactive consumer hubs, and data dashboards designed for thousands of concurrent sessions.
+            </p>
+            <span class="capability-tag">Ecosystems</span>
+          </div>
+
+          <!-- 7. API & System Integration -->
+          <div class="capability-card" id="cap-api-integration">
+            <div class="capability-icon">⇄</div>
+            <h3 class="capability-title">API & System Integration</h3>
+            <p class="capability-desc">
+              Secure RESTful & GraphQL interfaces connecting ERPs, payment gateways, analytics providers, and third-party SaaS ecosystems.
+            </p>
+            <span class="capability-tag">Interconnectivity</span>
+          </div>
+
+          <!-- 8. UI/UX Experiences -->
+          <div class="capability-card" id="cap-ui-ux">
+            <div class="capability-icon">◎</div>
+            <h3 class="capability-title">UI/UX Experiences</h3>
+            <p class="capability-desc">
+              Pixel-perfect digital interfaces, deliberate design systems, ergonomic interaction design, and fluid interactive animations.
+            </p>
+            <span class="capability-tag">Product Design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         HOW IT WORKS (TIMELINE PROCESS)
+         ========================================================================== -->
+    <section class="section section-alt" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            Proven Methodology
+          </div>
+          <h2 class="section-title">How We Build: From Vision to Production</h2>
+          <p class="section-desc">
+            A transparent, agile, and disciplined five-phase engineering process designed to eliminate guesswork and deliver verified outcomes.
+          </p>
+        </div>
+
+        <div class="process-timeline">
+          <!-- Step 01 -->
+          <div class="process-step" id="step-01">
+            <div class="step-num">01</div>
+            <h3 class="step-title">Discover</h3>
+            <p class="step-desc">
+              Deep dive into your business model, core operational hurdles, user journeys, and technical feasibility requirements.
+            </p>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="process-step" id="step-02">
+            <div class="step-num">02</div>
+            <h3 class="step-title">Design</h3>
+            <p class="step-desc">
+              Synthesize product strategy, technical architecture, schema specifications, and interactive interface prototypes.
+            </p>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="process-step" id="step-03">
+            <div class="step-num">03</div>
+            <h3 class="step-title">Build</h3>
+            <p class="step-desc">
+              Develop clean, resilient codebases utilizing modern engineering patterns, rigorous unit testing, and modular systems.
+            </p>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="process-step" id="step-04">
+            <div class="step-num">04</div>
+            <h3 class="step-title">Launch</h3>
+            <p class="step-desc">
+              Deploy to scalable cloud infrastructure with automated CI/CD pipelines, security audits, and comprehensive monitoring.
+            </p>
+          </div>
+
+          <!-- Step 05 -->
+          <div class="process-step" id="step-05">
+            <div class="step-num">05</div>
+            <h3 class="step-title">Improve</h3>
+            <p class="step-desc">
+              Continuously optimize system latency, analyze real-world telemetry, and roll out feature updates seamlessly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         USE CASES SECTION
+         ========================================================================== -->
+    <section class="section" id="use-cases">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            Industry Applications
+          </div>
+          <h2 class="section-title">Versatile Solutions Across Modern Sectors</h2>
+          <p class="section-desc">
+            Explore the diverse domains where Aura Craft Labs Limited can architect, modernize, and deploy intelligent digital software.
+          </p>
+        </div>
+
+        <div class="usecases-grid">
+          <!-- Startups -->
+          <div class="usecase-card">
+            <div class="usecase-badge">Seed to Scale</div>
+            <h3 class="usecase-title">Startups</h3>
+            <p class="usecase-desc">Rapid MVP prototyping, robust technical foundations, and scalable cloud architectures ready for investor diligence.</p>
+          </div>
+
+          <!-- SaaS Companies -->
+          <div class="usecase-card">
+            <div class="usecase-badge">Subscription Tech</div>
+            <h3 class="usecase-title">SaaS Companies</h3>
+            <p class="usecase-desc">Multi-tenant optimization, billing automation, user onboarding telemetry, and microservice refactoring.</p>
+          </div>
+
+          <!-- E-commerce -->
+          <div class="usecase-card">
+            <div class="usecase-badge">Retail & Commerce</div>
+            <h3 class="usecase-title">E-commerce</h3>
+            <p class="usecase-desc">Headless commerce architectures, personalized recommendation engines, and inventory sync systems.</p>
+          </div>
+
+          <!-- Professional Services -->
+          <div class="usecase-card">
+            <div class="usecase-badge">Enterprise Operations</div>
+            <h3 class="usecase-title">Professional Services</h3>
+            <p class="usecase-desc">Client engagement portals, automated billing systems, and compliance-ready document collaboration tools.</p>
+          </div>
+
+          <!-- Education -->
+          <div class="usecase-card">
+            <div class="usecase-badge">EdTech</div>
+            <h3 class="usecase-title">Education</h3>
+            <p class="usecase-desc">Interactive learning platforms, adaptive assessment modules, and student progress telemetry systems.</p>
+          </div>
+
+          <!-- Healthcare Technology -->
+          <div class="usecase-card">
+            <div class="usecase-badge">Health Systems</div>
+            <h3 class="usecase-title">Healthcare Tech</h3>
+            <p class="usecase-desc">Secure clinical data workflows, telehealth appointment coordination, and HIPAA-aware internal portals.</p>
+          </div>
+
+          <!-- Business Automation -->
+          <div class="usecase-card">
+            <div class="usecase-badge">Efficiency</div>
+            <h3 class="usecase-title">Business Automation</h3>
+            <p class="usecase-desc">Intelligent document parsing, scheduled data consolidation, and automated cross-platform notification pipelines.</p>
+          </div>
+
+          <!-- AI Products -->
+          <div class="usecase-card">
+            <div class="usecase-badge">Autonomous Tech</div>
+            <h3 class="usecase-title">AI Products</h3>
+            <p class="usecase-desc">Custom domain copilots, conversational interfaces, and intelligent workflow assistants tailored to specific workflows.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SOLUTIONS SECTION
+         ========================================================================== -->
+    <section class="section section-alt" id="solutions">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            Engineered Platforms
+          </div>
+          <h2 class="section-title">Specialized Solution Architectures</h2>
+          <p class="section-desc">
+            Pre-architected design patterns and custom-tailored implementations engineered to solve high-value operational challenges.
+          </p>
+        </div>
+
+        <div class="solutions-grid">
+          <!-- Solution 1 -->
+          <div class="solution-card">
+            <div class="solution-icon-box">🧠</div>
+            <h3 class="solution-title">AI-Powered Applications</h3>
+            <p class="solution-desc">
+              Context-aware digital products incorporating natural language understanding, automated decision pipelines, and real-time inference.
+            </p>
+            <ul class="solution-features">
+              <li><span>✓</span> Neural search & vector embeddings</li>
+              <li><span>✓</span> Automated data summarization</li>
+              <li><span>✓</span> Secure private model fine-tuning</li>
+            </ul>
+          </div>
+
+          <!-- Solution 2 -->
+          <div class="solution-card">
+            <div class="solution-icon-box">⚙</div>
+            <h3 class="solution-title">Business Automation</h3>
+            <p class="solution-desc">
+              Eradicate manual data re-entry and operational bottlenecks with end-to-end event-driven automated workflows.
+            </p>
+            <ul class="solution-features">
+              <li><span>✓</span> Zero-friction webhook sync</li>
+              <li><span>✓</span> Automated invoice & contract routing</li>
+              <li><span>✓</span> Scheduled health auditing & alerts</li>
+            </ul>
+          </div>
+
+          <!-- Solution 3 -->
+          <div class="solution-card">
+            <div class="solution-icon-box">🌐</div>
+            <h3 class="solution-title">Custom Web Platforms</h3>
+            <p class="solution-desc">
+              Fast, enterprise-grade web applications designed for security, SEO performance, and effortless cross-device compatibility.
+            </p>
+            <ul class="solution-features">
+              <li><span>✓</span> High-throughput API architectures</li>
+              <li><span>✓</span> Progressive web capabilities</li>
+              <li><span>✓</span> Role-based security controls</li>
+            </ul>
+          </div>
+
+          <!-- Solution 4 -->
+          <div class="solution-card">
+            <div class="solution-icon-box">⚡</div>
+            <h3 class="solution-title">SaaS Development</h3>
+            <p class="solution-desc">
+              Complete turnkey software-as-a-service frameworks including subscription management, tenant isolation, and administrative dashboards.
+            </p>
+            <ul class="solution-features">
+              <li><span>✓</span> Multi-tier billing systems</li>
+              <li><span>✓</span> Automated user lifecycle emails</li>
+              <li><span>✓</span> Real-time usage analytics</li>
+            </ul>
+          </div>
+
+          <!-- Solution 5 -->
+          <div class="solution-card">
+            <div class="solution-icon-box">🤖</div>
+            <h3 class="solution-title">Intelligent Agents</h3>
+            <p class="solution-desc">
+              Autonomous digital agents capable of executing multi-step business tasks, parsing complex files, and coordinating across departments.
+            </p>
+            <ul class="solution-features">
+              <li><span>✓</span> Multi-modal document ingestion</li>
+              <li><span>✓</span> Auditable decision logs</li>
+              <li><span>✓</span> Human-in-the-loop validation</li>
+            </ul>
+          </div>
+
+          <!-- Solution 6 -->
+          <div class="solution-card">
+            <div class="solution-icon-box">🔗</div>
+            <h3 class="solution-title">Data & API Integrations</h3>
+            <p class="solution-desc">
+              Bridge disparate legacy silos with modern API orchestrations, guaranteeing reliable data synchronization without downtime.
+            </p>
+            <ul class="solution-features">
+              <li><span>✓</span> Microservice message brokers</li>
+              <li><span>✓</span> Resilient retry logic & queueing</li>
+              <li><span>✓</span> Unified telemetry & observability</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INTEGRATIONS SECTION
+         ========================================================================== -->
+    <section class="section" id="integrations">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            System Connectivity
+          </div>
+          <h2 class="section-title">Seamless Integration Ecosystems</h2>
+          <p class="section-desc">
+            Modern enterprises operate across multifaceted software environments. We connect your custom solutions with all vital standard categories.
+          </p>
+        </div>
+
+        <div class="integrations-grid">
+          <div class="integration-card">
+            <div class="integration-icon">✦</div>
+            <div>
+              <h3 class="integration-title">AI & LLM Services</h3>
+              <p class="integration-desc">Open-weights and proprietary model endpoints, embedding pipelines, and vector store connectors.</p>
+            </div>
+          </div>
+
+          <div class="integration-card">
+            <div class="integration-icon">💳</div>
+            <div>
+              <h3 class="integration-title">Payment Gateways</h3>
+              <p class="integration-desc">Secure checkout bridges, recurring subscription webhooks, invoicing engines, and currency conversion.</p>
+            </div>
+          </div>
+
+          <div class="integration-card">
+            <div class="integration-icon">👥</div>
+            <div>
+              <h3 class="integration-title">CRM Systems</h3>
+              <p class="integration-desc">Two-way synchronization of customer contact records, deal stages, and outbound communications.</p>
+            </div>
+          </div>
+
+          <div class="integration-card">
+            <div class="integration-icon">🗄️</div>
+            <div>
+              <h3 class="integration-title">Databases & Lakes</h3>
+              <p class="integration-desc">PostgreSQL, Redis caching layers, NoSQL stores, and distributed analytical data warehouses.</p>
+            </div>
+          </div>
+
+          <div class="integration-card">
+            <div class="integration-icon">📊</div>
+            <div>
+              <h3 class="integration-title">Analytics & BI</h3>
+              <p class="integration-desc">Event tracking pipelines, customer journey metrics, custom dashboards, and performance logging.</p>
+            </div>
+          </div>
+
+          <div class="integration-card">
+            <div class="integration-icon">💬</div>
+            <div>
+              <h3 class="integration-title">Communication APIs</h3>
+              <p class="integration-desc">Automated SMS dispatches, transactional email deliverability, and instant team chat notifications.</p>
+            </div>
+          </div>
+
+          <div class="integration-card">
+            <div class="integration-icon">☁️</div>
+            <div>
+              <h3 class="integration-title">Cloud Infrastructure</h3>
+              <p class="integration-desc">Container orchestration, serverless microservices, managed storage buckets, and global CDNs.</p>
+            </div>
+          </div>
+
+          <div class="integration-card">
+            <div class="integration-icon">🔌</div>
+            <div>
+              <h3 class="integration-title">Custom Business APIs</h3>
+              <p class="integration-desc">Proprietary internal protocols, legacy ERP connectors, and secure partner authorization boundaries.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         DEVELOPERS SECTION (Visual Code Panel Demonstration)
+         ========================================================================== -->
+    <section class="section section-alt" id="developers">
+      <div class="container">
+        <div class="dev-wrapper">
+          <div class="dev-text-content">
+            <div class="section-badge">
+              <span class="section-badge-dot"></span>
+              Developer Architecture
+            </div>
+            <h3>Engineered for Clean Code & Modularity</h3>
+            <p>
+              We believe in readable architectures, strictly typed interfaces, comprehensive documentation, and predictable release pipelines.
+            </p>
+
+            <div class="dev-points">
+              <div class="dev-point">
+                <span class="dev-point-icon">✓</span>
+                <span>Type-safe, maintainable component and service structures</span>
+              </div>
+              <div class="dev-point">
+                <span class="dev-point-icon">✓</span>
+                <span>Open, RESTful and asynchronous event-driven design</span>
+              </div>
+              <div class="dev-point">
+                <span class="dev-point-icon">✓</span>
+                <span>Zero vendor lock-in with portable, standardized codebases</span>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 12px; align-items: center;">
+              <a href="#contact" class="btn btn-outline">Request Technical Specs</a>
+              <button class="btn btn-secondary" id="run-code-btn" style="font-size: 0.88rem; padding: 10px 18px;">Simulate Execution</button>
+            </div>
+          </div>
+
+          <!-- Developer Visual Terminal -->
+          <div class="code-panel">
+            <div class="code-header">
+              <div class="code-title">solution-pipeline.js</div>
+              <button class="code-copy-btn" id="copy-code-btn">Copy Code</button>
+            </div>
+            <pre class="code-body" id="code-content"><code><span class="code-comment">// Aura Craft Labs Limited — Solution Pipeline Interface</span>
+<span class="code-kw">import</span> { AuraEngine } <span class="code-kw">from</span> <span class="code-str">"@auracraft/core"</span>;
+
+<span class="code-kw">async function</span> <span class="code-fn">buildIntelligentSolution</span>() {
+  <span class="code-kw">const</span> <span class="code-var">client</span> = <span class="code-kw">new</span> <span class="code-fn">AuraEngine</span>({
+    organization: <span class="code-str">"Aura Craft Labs Limited"</span>,
+    environment: <span class="code-str">"production"</span>
+  });
+
+  <span class="code-comment">// Initialize tailored AI pipeline</span>
+  <span class="code-kw">const</span> <span class="code-var">pipeline</span> = <span class="code-kw">await</span> <span class="code-var">client</span>.<span class="code-fn">deploy</span>({
+    target: <span class="code-str">"ai_automation"</span>,
+    latencyTarget: <span class="code-str">"&lt; 50ms"</span>,
+    scalability: <span class="code-str">"auto_cluster"</span>
+  });
+
+  <span class="code-kw">return</span> <span class="code-var">pipeline</span>.<span class="code-fn">verifyOperationalReadiness</span>();
+}</code></pre>
+            <div id="code-output-panel" style="display: none; background: #06080e; border-top: 1px solid var(--border-color); padding: 14px 20px; font-family: monospace; font-size: 0.8rem; line-height: 1.5;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PRICING SECTION (Honest Custom Project Engagements)
+         ========================================================================== -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            Transparent Engagements
+          </div>
+          <h2 class="section-title">Tailored Project Engagements</h2>
+          <p class="section-desc">
+            Because every digital product involves unique technical requirements, we do not impose arbitrary fixed fees. All projects receive bespoke scoping with clear deliverables.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Starter Tier -->
+          <div class="pricing-card" id="pricing-starter">
+            <h3 class="pricing-plan-name">Starter</h3>
+            <p class="pricing-plan-desc">For smaller projects, initial prototypes, and focused MVP development.</p>
+            <div class="pricing-amount">
+              <span class="pricing-val">Custom</span>
+              <span class="pricing-term">/ project scope</span>
+            </div>
+            <ul class="pricing-features">
+              <li><span>✓</span> Architecture & tech stack advisory</li>
+              <li><span>✓</span> Core MVP feature implementation</li>
+              <li><span>✓</span> Responsive frontend & API connection</li>
+              <li><span>✓</span> Deployment on secure cloud host</li>
+              <li><span>✓</span> Code handover & documentation</li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary">Discuss Your Project</a>
+          </div>
+
+          <!-- Business Tier (Featured) -->
+          <div class="pricing-card featured" id="pricing-business">
+            <div class="pricing-badge">Recommended</div>
+            <h3 class="pricing-plan-name">Business</h3>
+            <p class="pricing-plan-desc">For growing companies requiring full-featured platforms, AI, and automation.</p>
+            <div class="pricing-amount">
+              <span class="pricing-val">Custom</span>
+              <span class="pricing-term">/ dedicated roadmap</span>
+            </div>
+            <ul class="pricing-features">
+              <li><span>✓</span> Complete end-to-end platform design</li>
+              <li><span>✓</span> Custom AI solutions & workflow automation</li>
+              <li><span>✓</span> Advanced multi-tenant or SaaS modules</li>
+              <li><span>✓</span> Performance tuning & security hardening</li>
+              <li><span>✓</span> Dedicated agile engineering sprints</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Discuss Your Project</a>
+          </div>
+
+          <!-- Enterprise Tier -->
+          <div class="pricing-card" id="pricing-enterprise">
+            <h3 class="pricing-plan-name">Enterprise</h3>
+            <p class="pricing-plan-desc">For larger, high-complexity systems requiring mission-critical architecture.</p>
+            <div class="pricing-amount">
+              <span class="pricing-val">Custom</span>
+              <span class="pricing-term">/ enterprise SLA</span>
+            </div>
+            <ul class="pricing-features">
+              <li><span>✓</span> Distributed microservices & clustering</li>
+              <li><span>✓</span> Tailored enterprise AI model pipelines</li>
+              <li><span>✓</span> Strict compliance & role-based RBAC</li>
+              <li><span>✓</span> Legacy system migration & integration</li>
+              <li><span>✓</span> Direct strategic advisory with Ali Imran</li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary">Discuss Your Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         BLOG SECTION (Sample Industry Insights)
+         ========================================================================== -->
+    <section class="section section-alt" id="blog">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            Insights & Research
+          </div>
+          <h2 class="section-title">Perspectives on Modern Engineering</h2>
+          <p class="section-desc">
+            Explore our latest thinking on artificial intelligence, sustainable software architectures, and the evolution of digital platforms.
+          </p>
+        </div>
+
+        <div class="blog-grid">
+          <!-- Article 1 -->
+          <article class="blog-card">
+            <div class="blog-visual">
+              <div class="blog-visual-icon">💡</div>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-category">Artificial Intelligence</span>
+                <span class="blog-date">Sample Article</span>
+              </div>
+              <h3 class="blog-title">How AI Is Changing Modern Software</h3>
+              <p class="blog-desc">
+                An analysis of how generative capabilities and autonomous agent loops are reshaping user experiences and developer productivity.
+              </p>
+              <a href="#contact" class="blog-link">Read Article →</a>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="blog-card">
+            <div class="blog-visual" style="background: linear-gradient(135deg, #0f2b3c 0%, #07131b 100%);">
+              <div class="blog-visual-icon">🛠️</div>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-category">Product Engineering</span>
+                <span class="blog-date">Sample Article</span>
+              </div>
+              <h3 class="blog-title">Building Better Digital Products</h3>
+              <p class="blog-desc">
+                Why disciplined design tokens, robust TypeScript architectures, and fast render times remain the true foundation of user retention.
+              </p>
+              <a href="#contact" class="blog-link">Read Article →</a>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="blog-card">
+            <div class="blog-visual" style="background: linear-gradient(135deg, #2b1055 0%, #110724 100%);">
+              <div class="blog-visual-icon">🚀</div>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-category">Enterprise Strategy</span>
+                <span class="blog-date">Sample Article</span>
+              </div>
+              <h3 class="blog-title">The Future of AI-Powered Businesses</h3>
+              <p class="blog-desc">
+                Strategic recommendations for founders evaluating when to deploy fine-tuned models versus standardized prompt orchestration pipelines.
+              </p>
+              <a href="#contact" class="blog-link">Read Article →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CHANGELOG SECTION
+         ========================================================================== -->
+    <section class="section" id="changelog">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            Version History
+          </div>
+          <h2 class="section-title">Company & Platform Changelog</h2>
+          <p class="section-desc">
+            A transparent timeline of technical rollouts, laboratory releases, and architectural enhancements.
+          </p>
+        </div>
+
+        <div class="changelog-timeline">
+          <!-- Entry 1 -->
+          <div class="changelog-entry">
+            <div class="changelog-dot"></div>
+            <div class="changelog-card">
+              <div class="changelog-header">
+                <span class="changelog-ver">Version 1.2 — Enhanced Digital Experiences</span>
+                <span class="changelog-tag">Latest Update</span>
+              </div>
+              <p class="changelog-desc">
+                Implemented performance-focused render optimizations, upgraded CSS variable token system, and refreshed responsive navigation drawer.
+              </p>
+            </div>
+          </div>
+
+          <!-- Entry 2 -->
+          <div class="changelog-entry">
+            <div class="changelog-dot"></div>
+            <div class="changelog-card">
+              <div class="changelog-header">
+                <span class="changelog-ver">Version 1.1 — AI Solutions Architecture Suite</span>
+                <span class="changelog-tag">Platform Update</span>
+              </div>
+              <p class="changelog-desc">
+                Added streamlined modules for intelligent document processing, vector search integrations, and automated client analytics dashboards.
+              </p>
+            </div>
+          </div>
+
+          <!-- Entry 3 -->
+          <div class="changelog-entry">
+            <div class="changelog-dot"></div>
+            <div class="changelog-card">
+              <div class="changelog-header">
+                <span class="changelog-ver">Version 1.0 — Official Platform Launch</span>
+                <span class="changelog-tag">Foundation</span>
+              </div>
+              <p class="changelog-desc">
+                Official establishment of Aura Craft Labs Limited digital presence, service catalogs, developer specifications, and engagement portal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TESTIMONIALS SECTION (Clearly Labeled Sample Content)
+         ========================================================================== -->
+    <section class="section section-alt" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            Partner Perspectives
+          </div>
+          <h2 class="section-title">Sample Partner Feedback</h2>
+          <p class="section-desc">
+            The following testimonials are sample placeholder templates designed for straightforward replacement as live client quotes become available.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <span class="testimonial-placeholder-tag">Sample Testimonial</span>
+            <p class="testimonial-quote">
+              "Client testimonial will be added here. Aura Craft Labs Limited delivered architectural clarity and executed our digital transformation on schedule."
+            </p>
+            <div class="testimonial-author-box">
+              <div class="testimonial-avatar-mock">CT</div>
+              <div>
+                <div class="testimonial-name">Client Partner [Placeholder]</div>
+                <div class="testimonial-role">Product Lead, Technology Venture</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <span class="testimonial-placeholder-tag">Sample Testimonial</span>
+            <p class="testimonial-quote">
+              "Client testimonial will be added here. Working with Ali Imran and the engineering team ensured our platform handled traffic surges without latency."
+            </p>
+            <div class="testimonial-author-box">
+              <div class="testimonial-avatar-mock">FP</div>
+              <div>
+                <div class="testimonial-name">Founder Partner [Placeholder]</div>
+                <div class="testimonial-role">CEO, SaaS Organization</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <span class="testimonial-placeholder-tag">Sample Testimonial</span>
+            <p class="testimonial-quote">
+              "Client testimonial will be added here. Their attention to clean code, modular components, and transparent communication made integration effortless."
+            </p>
+            <div class="testimonial-author-box">
+              <div class="testimonial-avatar-mock">EM</div>
+              <div>
+                <div class="testimonial-name">Engineering Manager [Placeholder]</div>
+                <div class="testimonial-role">Operations Director, Digital Services</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FAQ SECTION (Smooth Vanilla JS Accordion)
+         ========================================================================== -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            Common Inquiries
+          </div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-desc">
+            Answers to common questions regarding how we partner, our technical capabilities, and project delivery standards.
+          </p>
+        </div>
+
+        <div class="faq-accordion">
+          <!-- Item 1 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>What does Aura Craft Labs Limited do?</span>
+              <span class="faq-icon-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Aura Craft Labs Limited is a technology and software engineering company that creates intelligent digital experiences, modern SaaS platforms, custom software, AI automation pipelines, and scalable cloud systems for modern organizations.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>What types of projects do you build?</span>
+              <span class="faq-icon-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                We engineer full-stack web applications, business automation pipelines, multi-tenant SaaS platforms, interactive user interfaces, API gateways, and custom database integrations tailored specifically to our clients' workflows.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>Do you build AI-powered applications?</span>
+              <span class="faq-icon-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Yes. We design and integrate tailored AI solutions including semantic search, natural language interfaces, custom retrieval-augmented generation (RAG), automated document intelligence, and predictive workflows.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>Can you develop custom SaaS products?</span>
+              <span class="faq-icon-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Absolutely. We handle end-to-end SaaS development including multi-tenant database partitioning, automated subscription and billing logic, administrative dashboards, authentication, and continuous deployment infrastructure.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>How can I start a project with Aura Craft Labs?</span>
+              <span class="faq-icon-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                You can reach out directly via our contact form below or email our leadership team. We schedule an introductory technical discovery session to review your goals, architectural requirements, and delivery milestones.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>Do you work with startups?</span>
+              <span class="faq-icon-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Yes, we collaborate closely with early-stage and venture-backed startups to build resilient minimum viable products (MVPs), refine technical specifications, and establish architectures that scale cleanly without accumulating technical debt.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION (Interactive Form & Easy Placeholders)
+         ========================================================================== -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <span class="section-badge-dot"></span>
+            Direct Inquiries
+          </div>
+          <h2 class="section-title">Start a Project with Our Laboratory</h2>
+          <p class="section-desc">
+            Share your project parameters, technical challenges, or collaboration proposal. Our team responds promptly with technical insights.
+          </p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Contact Information & Editable Placeholders -->
+          <div class="contact-info-panel">
+            <div>
+              <h3>Get in Touch</h3>
+              <p>
+                Have an ambitious digital project or need to augment your engineering capabilities? Contact our team directly.
+              </p>
+
+              <div class="contact-details-list">
+                <!-- Editable company email Email Placeholder -->
+                <div class="contact-detail-item">
+                  <div class="contact-icon">✉</div>
+                  <div>
+                    <div class="contact-detail-label">Email Inquiries</div>
+                    <div class="contact-detail-val" id="contact-email">officalauracraftlabslimited@gmail.com</div>
+                  </div>
+                </div>
+
+                <!-- Editable Ceo Email Placeholder -->
+                <div class="contact-detail-item">
+                  <div class="contact-icon">✉</div>
+                  <div>
+                    <div class="contact-detail-label">Email Inquiries</div>
+                    <div class="contact-detail-val" id="contact-email1">officalceoaliimran@gmail.com</div>
+                  </div>
+                </div>
+
+                <!-- Editable Location Placeholder -->
+                <div class="contact-detail-item">
+                  <div class="contact-icon">📍</div>
+                  <div>
+                    <div class="contact-detail-label">Headquarters / Location</div>
+                    <div class="contact-detail-val" id="contact-location">Lahore, Pakistan & Distributed Worldwide</div>
+                  </div>
+                </div>
+
+                <!-- Social Links Placeholders -->
+                <div class="contact-detail-item">
+                  <div class="contact-icon">🌐</div>
+                  <div>
+                    <div class="contact-detail-label">Networks & Channels</div>
+                    <div class="contact-detail-val" style="display: flex; gap: 14px; margin-top: 6px;">
+                      <a href="https://www.linkedin.com/company/aura-craft-labs-limited/" style="color: var(--secondary-color); text-decoration: none;">LinkedIn</a>
+                      <a href="https://github.com/AURACRAFTLABSLIMITED" style="color: var(--secondary-color); text-decoration: none;">GitHub</a>
+                      <a href="https://x.com/AuraCraftLabs" style="color: var(--secondary-color); text-decoration: none;">X (Twitter)</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 16px;">
+              <div style="font-size: 0.8rem; color: var(--muted-text);">Executive Office</div>
+              <div style="font-size: 0.95rem; font-weight: 700; color: #ffffff;">Ali Imran, Founder & CEO</div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-panel">
+            <form id="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="form-name">Your Full Name *</label>
+                  <input type="text" id="form-name" class="form-control" placeholder="e.g. Jane Doe" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="form-email">Work Email *</label>
+                  <input type="email" id="form-email" class="form-control" placeholder="jane@company.com" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="form-company">Company / Organization</label>
+                  <input type="text" id="form-company" class="form-control" placeholder="e.g. Acme Ventures" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="form-project-type">Project Type *</label>
+                  <select id="form-project-type" class="form-control" required>
+                    <option value="AI Solutions & Machine Learning">AI Solutions & Machine Learning</option>
+                    <option value="Custom Web Platform">Custom Web Platform</option>
+                    <option value="SaaS Product Engineering">SaaS Product Engineering</option>
+                    <option value="AI Automation & Workflows">AI Automation & Workflows</option>
+                    <option value="API & System Integration">API & System Integration</option>
+                    <option value="General Strategic Consultation">General Strategic Consultation</option>
+                    <option value="Full Stack Web Apps">Full Stack Web Apps</option>
+                    <option value="Mobile apps">Mobile apps</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-message">Project Overview & Objectives *</label>
+                <textarea id="form-message" class="form-control" placeholder="Describe the challenges, timeline, or scope you would like to address..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;" id="form-submit-btn">Send Project Inquiry</button>
+
+              <div id="form-toast" class="form-toast"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <img src="/assets/logo.svg" alt="Aura Craft Labs Limited" class="brand-logo-img" onerror="this.onerror=null; this.src='/assets/logo.png';" />
+            <span style="font-size: 1.15rem; font-weight: 700; color: #ffffff;">Aura Craft Labs Limited</span>
+          </div>
+          <p>
+            Engineering intelligent digital solutions, AI platforms, automation systems, and scalable software for forward-thinking modern businesses.
+          </p>
+          <div style="font-size: 0.85rem; color: var(--muted-text);">
+            Founded &amp; Led by <strong>Ali Imran</strong> — CEO | Founder of Aura Craft Labs Limited
+          </div>
+        </div>
+
+        <!-- Navigation Column 1: Company -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about" class="footer-link">About</a></li>
+            <li><a href="#capabilities" class="footer-link">Capabilities</a></li>
+            <li><a href="#solutions" class="footer-link">Solutions</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Navigation Column 2: Resources -->
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#blog" class="footer-link">Blog</a></li>
+            <li><a href="#changelog" class="footer-link">Changelog</a></li>
+            <li><a href="#developers" class="footer-link">Developers</a></li>
+            <li><a href="#faq" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Navigation Column 3: Services -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="#capabilities" class="footer-link">AI Solutions</a></li>
+            <li><a href="#capabilities" class="footer-link">Web Development</a></li>
+            <li><a href="#capabilities" class="footer-link">SaaS Products</a></li>
+            <li><a href="#capabilities" class="footer-link">AI Automation</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Copyright & Credits -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Aura Craft Labs Limited. All rights reserved.
+        </div>
+        <div class="founder-credit">
+          Executive Leadership: <strong>ALI IMRAN</strong> — CEO | FOUNDER OF AURA CRAFT LABS LIMITED
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vanilla JavaScript Logic -->
+  <script src="/js/script.js"></script>
+</body>
+</html>
